@@ -1,0 +1,42 @@
+@keyframes scaleUpDown {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.animate-scale {
+  animation: scaleUpDown 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 1.5s ease-in-out;
+}
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #20b2aa; /* Nice background color */
+}
+
+.splash-screen-title {
+  font-size: 4rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  color: #FFFFFF; /* Font color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  font-family: 'Cursive', 'Brush Script MT', sans-serif; /* Curvy and classy font */
+}

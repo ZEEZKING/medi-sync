@@ -1,0 +1,82 @@
+/* Doctor List Container */
+.doctor-list-container {
+  padding: 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Search Input */
+.search-input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Loading & Error Messages */
+.loading-text,
+.error-message,
+.no-doctors {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Doctor Grid Layout */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Doctor Card */
+.doctor-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  max-width: 250px;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Doctor Photo */
+.doctor-photo {
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+}
+
+/* Specialty */
+.specialty {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Book Appointment Button */
+.book-btn {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #0056b3;
+}
